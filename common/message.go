@@ -52,6 +52,9 @@ type Message struct {
 
 	// TransportOptions transport specific options.
 	TransportOptions map[string]interface{} `json:"-"`
+	ContentEncoding  string                 `json:"content_encoding"`
+	ContentType      string                 `json:"content_type"`
+	DTSubject        string                 `json:"dt_subject"`
 }
 
 // ConnectionAuthMethod is an authentication method of device-to-cloud communication.
